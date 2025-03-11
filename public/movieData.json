@@ -1,0 +1,279 @@
+[
+    {
+        "movie title":"Alien",
+        "genres": ["Horror", "Thriller","Fiction"],
+        "year":"",
+        "image":"/images/alienPoster.jpg",
+        "id":1
+    },
+
+    {
+        "movie title":"Bad Boys-RIDE OR DIE",
+        "genres":["Action", "HollyWood", "Crime","Comedy"],
+        "year":"",
+        "image":"/images/BadBoys.jpg",
+        "id":2
+    },
+
+    {
+        "movie title":"Black Widow",
+        "genres":["Action", "HollyWood", "SCI-FI"],
+        "year":"2023",
+        "image":"/images/blackWidow.jpg",
+        "id":22
+    },
+
+    {
+        "movie title":"Casa de Novia",
+        "genres":["Nollywood", "Thriller","Comedy"],
+        "year":"",
+        "image":"/images/casaDeNovia.jpg",
+        "id":23
+    },
+
+    {
+        "movie title":"Civil War",
+        "genres":["violence", "War"],
+        "year":"",
+        "image":"/images/CivilWar.jpg",
+        "id":3
+    },
+
+    {
+        "movie title":"Escape",
+        "genres":["Korean", "Action", ""],
+        "year":"2024",
+        "image":"/images/escapeKorean.jpg",
+        "id":24
+    },
+
+    {
+        "movie title":"Extraction 2",
+        "genres":["Action", "HollyWood", "Rescue"],
+        "year":"2023",
+        "image":"/images/extraction2.jpg",
+        "id":25
+    },
+
+    {
+        "movie title":"Furiosa",
+        "genres":["Adventure","Action","Nature"],
+        "year":"2024",
+        "image":"/images/Furiosa.jpg",
+        "id":4
+    },
+
+    {
+        "movie title":"Joker",
+        "genres":[],
+        "year":"",
+        "image":"/images/joker.jpg",
+        "id":5
+    },
+
+    {
+        "movie title":"Justice League x RWBY",
+        "genres":["Animation", "Superhero", "Anime"],
+        "year":"2023",
+        "image":"/images/justiceLeagueRWBY.jpg",
+        "id":26
+    },
+
+    {
+        "movie title":"King",
+        "genres":["Action","Bollywood","Comedy"],
+        "year":"2025",
+        "image":"/images/King(Indian).jpg",
+        "id":6
+    },
+
+    {
+        "movie title":"Kingdom of the Planet of the Apes",
+        "genres":[],
+        "year":"",
+        "image":"/images/KingdomOfPlanetOfApes.jpg",
+        "id":7
+    },
+
+    {
+        "movie title":"Miraculous Ladybug and CatNoir, The movie",
+        "genres":["Animation","Romance","SuperHero"],
+        "year":"2023",
+        "image":"/images/ladybugAndCatNoir.jpg",
+        "id":8
+    },
+
+    {
+        "movie title":"Mortal Kombat",
+        "genres":["Action","Violence","Fiction"],
+        "year":"2021",
+        "image":"/images/mortalKombat.jpg",
+        "id":9
+    },
+
+    {
+        "movie title":"Orion and the Dark",
+        "genres":["Animation"],
+        "year":"",
+        "image":"/images/OrionAndTheDark.jpg",
+        "id":10
+    },
+
+    {
+        "movie title":"Retribution",
+        "genres":[],
+        "year":"2023",
+        "image":"/images/retribution.jpg",
+        "id":27
+    },
+
+    {
+        "movie title":"Role Play",
+        "genres":["American","Action","Family","Thriller"],
+        "year":"2024",
+        "image":"/images/roleplay.jpg",
+        "id":11
+    },
+
+    {
+        "movie title":"Sakra",
+        "genres":["Action","Asian","Fiction",""],
+        "year":"2023",
+        "image":"/images/sakra.jpg",
+        "id":12
+
+    },
+
+    {
+        "movie title":"Self Reliance",
+        "genres":["Thriller","HollyWood","Casual"],
+        "year":"2023",
+        "image":"/images/selfReliance.jpg",
+        "id":13
+    },
+
+    {
+        "movie title":"Sisu",
+        "genres":[],
+        "year":"2023",
+        "image":"/images/sisu.jpg",
+        "id":34
+    },
+
+    {
+        "movie title":"Spiderman across the Spiderverse",
+        "genres":["Action", "Animation", "SuperHero","Fiction"],
+        "year":"2023",
+        "image":"/images/spidermanAcrossSpiderverse.jpg",
+        "id":14
+    },
+
+    {
+        "movie title":"SuperFly",
+        "genres":["Action", "drugs", "violence"],
+        "year":"2018",
+        "image":"/images/superfly.jpg",
+        "id":28
+    },
+
+    {
+        "movie title":"Terminator-Dark Fate",
+        "genres":["Action", "SCI-FI", "Thriller"],
+        "year":"2021",
+        "image":"/images/terminatorDarkFate.jpg",
+        "id":29
+    },
+
+    {
+        "movie title":"The Adam Project",
+        "genres":["Romance", "SCI-FI", "Thriller","Comedy"],
+        "year":"2022",
+        "image":"/images/theAdamProject.jpg",
+        "id":30
+    },
+
+    {
+        "movie title":"The Black Book",
+        "genres":["NollyWood", "Action", "Crime"],
+        "year":"2023",
+        "image":"/images/theBlackBook.jpg",
+        "id":31
+    },
+    
+
+    {
+        "movie title":"The Collective",
+        "genres":[],
+        "year":"2023",
+        "image":"/images/theCollective.jpg",
+        "id":15
+    },
+
+    {
+        "movie title":"The Equalizer 3",
+        "genres":["Action", "Thriller"],
+        "year":"2023",
+        "image":"/images/theEqualizer.jpg",
+        "id":32
+    },
+
+    {
+        "movie title":"The Machine",
+        "genres":["HollyWood","Comedy","Thriller"],
+        "year":"2023",
+        "image":"/images/theMachine.jpg",
+        "id":16
+    },
+
+
+
+    {
+        "movie title":"The Mother",
+        "genres":["Action","Adventure","Thriller","HollyWood"],
+        "year":"2023",
+        "image":"/images/theMother.jpg",
+        "id":17
+    },
+
+    {
+        "movie title":"The Perfect Find",
+        "genres":["Romance","Comedy","HollyWood","Casual"],
+        "year":"2023",
+        "image":"/images/thePerfectFind.jpg",
+        "id":18
+    },
+
+    {
+        "movie title":"The RoundUp No way Out",
+        "genres":["Romance", "SCI-FI", "Thriller","Comedy"],
+        "year":"2023",
+        "image":"/images/theRoundupNoWayOut.jpg",
+        "id":33
+    },
+
+    {
+        "movie title":"They Cloned Tyrone",
+        "genres":["Action","HollyWood","SCI-FI","Violence"],
+        "year":"2023",
+        "image":"/images/theyClonedTyrone.jpg",
+        "id":19
+    },
+
+    {
+        "movie title":"Unstoppable",
+        "genres":[],
+        "year":"",
+        "image":"/images/Unstoppable.jpg",
+        "id":20
+    },
+
+    {
+        "movie title":"The Wrath of Becky",
+        "genres":["HollyWood","Violence","Thriller"],
+        "year":"2023",
+        "image":"/images/wrathOfBecky.jpg",
+        "id":21
+    }
+
+
+]
