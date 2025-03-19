@@ -1,6 +1,9 @@
 import MovieCard from "../components/movieCard"
+import proptype from 'prop-types'
 
-
+TrendingPage.propTypes = {
+    trendingData:proptype.array
+}
 export default function TrendingPage({trendingData}){
     const array = [];
     trendingData.map(it=>{

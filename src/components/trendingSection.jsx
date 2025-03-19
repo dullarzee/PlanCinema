@@ -2,13 +2,18 @@ import TrendingTemplate from "./trendingTemplate.jsx";
 import MovieCard from './movieCard.jsx'
 import SearchBar from './searchBar.jsx'
 import film1 from '/images/film1.svg'
+import proptype from 'prop-types'
 
-
+TrendingSection.propTypes = {
+    trendingData:proptype.array,
+    searchValue:proptype.string,
+    setMovieData:proptype.func
+}
 
 export default function TrendingSection({trendingData, searchValue, setMovieData}){
     let movies = [];
 
-    {trendingData.slice(0, 8).map((it, index)=>{
+    {trendingData.slice(0, 8).map((it)=>{
         const year = it.year;
         const genres = it.genres;
          movies.push(<MovieCard key={it['id']} id={it['id']} setMovieData={setMovieData} title={it['title']} img={it['image']} year={year} 

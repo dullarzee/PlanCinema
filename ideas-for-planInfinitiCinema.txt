@@ -1,0 +1,92 @@
+Each movie in the array should ideally have this fields:
+
+-Movie Title
+-genre or genres (should be an array)
+-year of release
+-image/thumbNail(movie poster(s))
+
+
+
+check out this content just for you
+
+
+quick look
+//the selectable one row of movies
+
+filter by year
+filter by year range will be available soon
+contact us form
+
+
+
+
+
+Things to add to data.json
+
+
+
+
+
+
+
+
+
+
+
+
+################################################################
+Movie genres
+1. Action ⚔️
+Fast-paced movies featuring fights, explosions, chases, and high-energy sequences. Examples: John Wick, Mad Max: Fury Road
+
+2. Adventure 🏕️
+Focuses on exciting journeys, exploration, and discovery. Usually set in exotic locations. Examples: Indiana Jones, The Jungle Book
+
+3. Comedy 😂
+Designed to make the audience laugh, often through exaggerated situations or witty dialogue. Examples: Dumb and Dumber, Superbad
+
+4. Drama 🎭
+Serious, emotional stories that explore realistic human experiences, relationships, and struggles. Examples: The Pursuit of Happyness, Forrest Gump
+
+5. Horror 👻
+Created to scare or unsettle the audience using suspense, supernatural elements, or psychological fear. Examples: The Conjuring, A Nightmare on Elm Street
+
+6. Thriller 🔪
+Suspenseful and gripping films that keep audiences on edge. Often includes crime, tension, and unexpected twists. Examples: Gone Girl, Se7en
+
+7. Mystery 🕵️
+Revolves around solving a crime or unexplained event, usually involving detectives or investigators. Examples: Sherlock Holmes, Knives Out
+
+8. Sci-Fi 🚀
+Fictional stories involving advanced technology, space travel, futuristic concepts, or aliens. Examples: Interstellar, Blade Runner 2049
+
+9. Fantasy 🧙‍♂️
+Includes magical, mythical, or supernatural elements set in an imaginary world. Examples: Harry Potter, The Lord of the Rings
+
+10. Romance 💕
+Centers on love stories and emotional relationships between characters. Examples: The Notebook, Titanic
+
+11. Musical 🎶
+Features singing and dancing as a core part of storytelling. Examples: La La Land, The Greatest Showman
+
+12. Crime 🏛️
+Involves criminal activities, such as heists, mafia, or police investigations. Examples: The Godfather, Goodfellas
+
+13. War 🎖️
+Focuses on historical or fictional wars, often portraying battles and soldiers. Examples: Saving Private Ryan, 1917
+
+14. Western 🤠
+Set in the Old West, often featuring cowboys, outlaws, and duels. Examples: The Good, the Bad, and the Ugly, Django Unchained
+
+15. Animation 🎥
+Movies that use animated visuals, often appealing to both kids and adults. Examples: Toy Story, Spider-Man: Into the Spider-Verse
+
+16. Documentary 🎬
+Non-fiction films that present real-life stories, events, or issues. Examples: The Social Dilemma, Planet Earth
+
+17. Sports 🏆
+Based on athletic competitions, sports legends, or teams. Examples: Rocky, Remember the Titans
+
+18. Superhero 🦸‍♂️
+Features characters with superpowers or extraordinary abilities who fight villains. Examples: The Avengers, The Dark Knight
+
