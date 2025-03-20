@@ -1,3 +1,10 @@
+import {useState} from 'react';
+import proptype from 'prop-types';
+
+Footer.propTypes = {
+    children:proptype.object
+}
+
 export default function Footer({children}){
     return(
         <>
@@ -15,15 +22,19 @@ export default function Footer({children}){
     );
 }
 export function NewsLetter(){
+    const [email, setEmail] = useState('')
     return(
         <>
          <section className="">
             <h3 className="text-white text-2xl lg:text-4xl">Stay up-to-date with what we are doing</h3>
             <form className="mt-[2rem] flex flex-col lg:flex-row items-center space-y-[4%] gap-x-[4%]">
                 <div className="h-[4.3rem] bg-red-400 p-[1%] rounded-md">
-                    <input type="email" className="bg-white w-[19rem] h-[2.5rem]"></input>
+                    <label className=""><input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} className="bg-white w-[19rem] h-[2.5rem] pl-[3%] text-md
+                    text-slate-600 focus:outline-slate-600 font-inter peer"></input></label>
+                   <br /> <span className="font-karla text-red-500 hidden focus:peer-invalid:block">please enter a valid email</span>
                 </div>
-                <button className="px-[1.5rem] py-[0.3rem] bg-red-400 text-2xl text-white">Subscribe</button>
+                <button className="px-[1.5rem] py-[0.3rem] bg-red-400 text-2xl text-white hover:bg-white
+                hover:outline-3 hover:outline-red-400 hover:text-red-400 cursor-pointer">Subscribe</button>
             </form>
          </section>
         </>

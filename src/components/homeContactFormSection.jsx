@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Supabase from './supabase.jsx'
 
 export default function HomeContactForm(){
 const [form, setForm] = useState({
@@ -9,6 +10,38 @@ const [form, setForm] = useState({
     message:'',
     check:false
 });
+const [notify, setNotify] = useState(false);
+
+const handleSubmit = async(e)=>{
+    e.preventDefault();
+
+    try{
+        await Supabase.from('Users Messages').insert([
+        {
+            name:`${form.lastName} ${form.firstName}`,
+            email:form.email,
+            phone_number:form.phoneNumber,
+            message:form.message
+        }
+    ])
+    }catch(error){
+        console.error('error inserting into usersMessages Table:', error)
+        return;
+    }
+
+    setForm({
+        firstName:'',
+        lastName:'',
+        email:'',
+        phoneNumber:'',
+        message:'',
+        check:false
+    })
+
+    setNotify(true);
+    setTimeout(()=>setNotify(false),5000)
+
+}
 
 function handleFormChange1(e)
 {
@@ -50,7 +83,7 @@ function handleFormChange5(e)
     return(
         <>
          <div className="h-[70rem] lg:h-[50rem] border-t-2 border-slate-500 border-dashed bg-blue-100 p-[4%] font-karla grid grid-cols-1 lg:grid-cols-2">
-            <form className="w-[19rem] mx-auto order-2 lg:w-[35rem] bg-white p-[2%] rounded-lg shadow-md pt-[7%]">
+            <form onSubmit={handleSubmit} className="w-[19rem] mx-auto order-2 lg:w-[35rem] bg-white p-[2%] rounded-lg shadow-md pt-[7%]">
                 <fieldset className="">
                     <legend className="text-2xl ml-[3%]">Contact Us</legend>
                     
@@ -105,6 +138,11 @@ function handleFormChange5(e)
             </section>
 
          </div>
+
+
+         {notify && <div className="fixed text-center p-2 top-[-5rem] left-[8%] lg:left-[36%] h-[4.7rem] w-[18rem] animate-dropIn bg-slate-100 z-60 rounded-lg">
+            <span className='font-karla text-lg text-slate-500'>Your message has been submitted</span>
+         </div>}
         </>
     );
 }

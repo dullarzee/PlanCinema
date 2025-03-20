@@ -1,27 +1,29 @@
 @import 'tailwindcss';
 
-@theme{
-    --font-agency:smooch sans;
-    --font-karla:karla;
-    --font-broadway:bungee spice;
-    --font-french:playwrite Magyarország;
-    --font-inter:inter;
-    --font-barlow:barlow condensed;
-    --inset-shadow-bottom:inset 0px -15px 20px rgba(0, 0, 0, 0.5);
-    --inset-shadow-top:inset 0px 15px 20px rgba(0, 0, 0, 0.5);
-
-    --animate-dropIn:dropIn 4s ease-out;
+@theme {
+    --font-agency: smooch sans;
+    --font-karla: karla;
+    --font-broadway: limelight;
+    --font-french: borel;
+    --font-inter: inter;
+    --font-barlow: barlow condensed;
+    --inset-shadow-bottom: inset 0px -15px 20px rgba(0, 0, 0, 0.5);
+    --inset-shadow-top: inset 0px 15px 20px rgba(0, 0, 0, 0.5);
+    --breakpoint-tablet:42rem;
+    --animate-dropIn: dropIn 4s ease-out;
 
 
     @keyframes dropIn {
-        25%{
-            top:3rem;
+        25% {
+            top: 3rem;
         }
-        80%{
-            top:3rem;
+
+        80% {
+            top: 3rem;
         }
-        100%{
-            top:-8rem;
+
+        100% {
+            top: -8rem;
         }
     }
 }

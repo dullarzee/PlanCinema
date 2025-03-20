@@ -1,10 +1,12 @@
 import chart from '/images/statPic.jpeg'
 import Footer from '../components/footer';
 import { Address, NewsLetter } from '../components/footer';
+import NavBar from '../components/navBar';
 export default function AboutPage(){
     return(
         <>
-         <div className="bg-slate-700 p-[3%]">
+         <NavBar />
+         <div className="bg-slate-500 p-[3%]">
             <h1 className="text-5xl text-white">About <span className="text-red-400">Plan</span></h1>
          </div>
          <div className="min-h-[100vh] bg-slate-500 p-[5%]">

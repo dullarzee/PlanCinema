@@ -1,5 +1,21 @@
 import {useState} from 'react'
+import proptype from 'prop-types'
+import {motion} from 'framer-motion' 
 
+MovieCard.propTypes = {
+   title:proptype.string,
+   img:proptype.object,
+   genres:proptype.array,
+   year:proptype.string,
+   id:proptype.number,
+   url:proptype.string,
+   embed:proptype.string,
+   storyline:proptype.string
+}
+
+Genre.propTypes= {
+   children:proptype.object
+}
 export default function MovieCard({title, img, genres, year, id, url, embed, storyline}){
    const [like, setLike] = useState(false);
 
@@ -34,7 +50,10 @@ export default function MovieCard({title, img, genres, year, id, url, embed, sto
    })
 
     return(
-        <section tabIndex={0} onClick={handleDownLoad} className="mx-auto w-[13rem] h-[25rem] shrink-0 bg-black outline-2 outline-neutral-500 backdrop-blur rounded-md
+        <motion.section initial={{opacity:0, y:100}}
+                        whileInView={{opacity:1, y:0}}
+                        transition={{duration:0.4}}
+                        viewport={{once:'true'}} tabIndex={0} onClick={handleDownLoad} className="mx-auto w-[13rem] h-[25rem] shrink-0 bg-black outline-2 outline-neutral-500 backdrop-blur rounded-md
         hover:outline-2 hover:outline-sky-500 hover:outline-offset-4 transition-all duration-300 cursor-pointer
         focus:outline-2 focus:outline-sky-500 focus:outline-offset-4">
            <div className="p-[5%] h-[75%]">
@@ -69,7 +88,7 @@ export default function MovieCard({title, img, genres, year, id, url, embed, sto
 
            </div>
 
-        </section>
+        </motion.section>
     );
 }
 

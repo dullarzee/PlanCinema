@@ -4,6 +4,16 @@ import MobileNav from './mobileNav';
 
 export default function NavBar(){
 
+   let [home, trending, about] = '';
+   if(window.location.hash === '#/home' || window.location.hash === '') home = 'font-semibold text-sky-500 border-b-3 border-indigo-500'
+   else home = 'text-slate-500'
+
+   if(window.location.hash === '#/trending') trending = 'font-semibold text-sky-500 border-b-3 border-indigo-500'
+   else trending = 'text-slate-500'
+
+   if(window.location.hash === '#/about')about = 'font-semibold text-sky-500 border-b-3 border-indigo-500'
+   else about = 'text-slate-500'
+   
    function openMobileMenu()
    {
       document.querySelector('#mobileNav').style.display = 'block';
@@ -16,9 +26,9 @@ export default function NavBar(){
           <div className="absolute lg:scale-[0.17] scale-[0.13] top-[-310%] left-[-50%] lg:top-[-250%] lg:left-[-5%] text-center 
           mt-[3rem] rounded-full bg-radial from-[rgb(39,131,168)] via-[rgb(36,127,245)] to-[rgb(0,255,255)] w-[30rem] h-[30rem] text-white text-[3rem]">
                   <section className="relative rounded-full mx-auto w-[30rem] h-[30rem]">
-                        <span className="absolute top-[5%] left-[-30%] text-[rgb(55,40,151)] font-broadway text-[12rem]">Plan</span>
-                      <span className="font-broadway absolute top-[40%] left-[0%] text-[rgb(55,40,151)] text-[12rem]">Infiniti</span>
-                      <span className="absolute top-[70%] left-[40%] text-[7rem] font-french text-white/90">Cinema</span>
+                        <span className="font-broadway font-bold absolute top-[3%] left-[-30%] text-[rgb(55,40,151)] text-[12rem]">Plan</span>
+                      <span className="font-broadway font-bold absolute top-[38%] left-[0%] text-[rgb(55,40,151)] text-[12rem]">Infiniti</span>
+                      <span className="absolute top-[75%] left-[30%] text-[7rem] font-french text-slate-300">Cinema</span>
                   </section>
             </div>
 
@@ -26,17 +36,16 @@ export default function NavBar(){
            
          <div className='hidden lg:flex gap-x-[3%] w-[35%] font-inter text-lg ml-[25%]'>
 
-            <div className="h-full flex items-center border-b-3 border-indigo-500">
-            <button className="hover:text-slate-700 hover:bg-white px-[1rem] py-[0.3rem] hover:outline-[3px] outline-grey-500 
-            rounded-md font-semibold text-sky-500"><a href="#/home">Home</a></button>
+            <div className={`h-full flex items-center ${home}`}>
+               <button className="hover:text-slate-700 hover:bg-white px-[1rem] py-[0.3rem] hover:outline-[3px] outline-grey-500 rounded-md" ><a href="#/home">Home</a></button>
             </div>
 
-            <div className="h-full flex items-center">
+            <div className={`h-full flex items-center ${trending}`}>
             <button className="hover:text-slate-700 hover:bg-white px-[1rem] py-[0.3rem] hover:outline-[3px] outline-grey-500 
-            rounded-md text-slate-500"><a href="#/trending">Trending Movies</a></button>
+            rounded-md"><a href="#/trending">Trending Movies</a></button>
             </div>
 
-            <div className="relative group flex items-center">
+            <div className="relative group flex items-center ">
                <button className="flex items-center text-slate-500 hover:outline-3 outline-sky-500
                 hover:bg-white px-[1rem] py-[0.3rem]">Genres
                   <img alt="" className="group-hover:rotate-180 transition-transform duration-300" src={dropDown}></img>
@@ -57,9 +66,9 @@ export default function NavBar(){
 
 
 
-           <div className="h-full hidden lg:flex items-center">
-            <button className="hover:text-slate-700 hover:bg-white px-[1.5rem] py-[0.3rem] hover:outline-[3px] outline-grey-500 
-            rounded-md font-semibold text-blue-500"><a href="#/about">About Us</a></button>
+           <div className={`h-full hidden lg:flex items-center ${about}`}>
+               <button className="hover:text-slate-700 hover:bg-white px-[1.5rem] py-[0.3rem] hover:outline-[3px] outline-grey-500 
+               rounded-md font-semibold text-blue-500"><a href="#/about">About Us</a></button>
             </div>
 
             <div className="h-full hidden lg:flex items-center">

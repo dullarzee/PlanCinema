@@ -1,5 +1,14 @@
 import filter from '/images/filter.png'
+import proptype from 'prop-types'
 
+MidSection.propTypes = {
+    children:proptype.object,
+}
+
+Button.propTypes = {
+    children:proptype.object,
+    color:proptype.string
+}
 
 function Button({children, color}){
     return(

@@ -1,7 +1,10 @@
 import dropDown from '/images/chevron-down.png'
 
 export default function MobileNav(){
-
+    let [home, trending, about] = ''
+    if(window.location.hash === '#/home' || window.location.hash === '') home = 'font-semibold border-r-5 text-blue-500 border-sky-500'
+    else if(window.location.hash === '#/trending') trending = 'font-semibold border-r-5 text-blue-500 border-sky-500'
+    else if(window.location.hash === '#/about') about = 'font-semibold border-r-5 text-blue-500 border-sky-500' 
     function showGenres()
     {
         const genres = document.querySelector('#mobileGenres');
@@ -30,8 +33,8 @@ export default function MobileNav(){
             p-[3%]">
                 <img alt="" onClick={handleNavClose} className="relative top-[3%] cursor-pointer left-[79%] w-[2rem]" src="images/cancel.png"></img>
                <ul className="mt-[4rem] space-y-[0.8rem]">
-                  <li className="w-full font-semibold border-r-5 text-blue-500 border-sky-500"><a href="#/home">Home</a></li>
-                  <li><a href="#latest">Latest Movies</a></li>
+                  <li className={`w-full ${home}`}><a href="#/home">Home</a></li>
+                  <li className={`${trending}`}><a href="#/trending">Trending Movies</a></li>
                   <li><div className="relative group flex flex-col items-start">
                                  <button onClick={showGenres} className="flex items-center text-slate-500 cursor-pointer
                                   px-[1rem] py-[0.3rem]">Genres
@@ -49,8 +52,8 @@ export default function MobileNav(){
                               </div>
                     </li>
 
-                  <li><a href="#/about">About Us</a></li>
-                  <li><a href="#/advertise">Advertise with Us</a></li>
+                  <li className={`${about}`} ><a href="#/about">About Us</a></li>
+                  <li><a href="#/comingsoon">Advertise with Us</a></li>
 
                </ul>
             </div>

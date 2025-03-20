@@ -2,10 +2,20 @@ import {SearchBarinSearch} from '../components/searchBar'
 import SearchSuggestion from '../components/searchSuggestions';
 import SearchTemplate from '../components/searchTemplate'
 import searchLogic from '../components/searchLogic'
+import proptype from 'prop-types'
 
+SearchSection.propTypes ={
+    mainFetchedData:proptype.array,
+    searchValue:proptype.string,
+    setSearchValue:proptype.func,
+    
+}
+SearchSuggestionsContainer.propTypes = {
+    children:proptype.object
+}
 
 document.querySelector('body').style.backgroundColor = 'black';
-export default function SearchSection({mainFetchedData, searchValue, setSearchValue, setMovieData}){
+export default function SearchSection({mainFetchedData, searchValue, setSearchValue}){
     function handleReturnToHomepage(){
         window.location.hash = '#/home';
         setTimeout(()=>{
@@ -41,7 +51,7 @@ export default function SearchSection({mainFetchedData, searchValue, setSearchVa
             </div>
 
                 <SearchTemplate>
-                    {!searchValue ? <AboutToType /> : searchLogic(mainFetchedData, searchValue, setMovieData)}
+                    {!searchValue ? <AboutToType /> : searchLogic(mainFetchedData, searchValue)}
                 </SearchTemplate>
          </section>
         </>
