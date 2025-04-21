@@ -1,0 +1,16 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <radialGradient id="grad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" style="stop-color:rgb(39,131,168); stop-opacity:1" />
+                <stop offset="50%" style="stop-color:rgb(36,127,245); stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(0,255,255); stop-opacity:1" />
+            </radialGradient>
+        </defs>
+        
+        <circle cx="300" cy="300" r="250" fill="url(#grad)" />
+        
+
+        <text x="-5" y="245" font-family="Limelight, sans-serif" font-size="165" font-weight="800" fill="rgb(55,40,151)">Plan</text>
+        <text x="125" y="385" font-family="Limelight, sans-serif" font-size="165" font-weight="800" fill="rgb(55,40,151)">Infiniti</text>
+        <text x="250" y="450" font-family="Borel, cursive" font-size="70" font-weight="300" fill="whitesmoke">Cinema</text>
+    </svg>

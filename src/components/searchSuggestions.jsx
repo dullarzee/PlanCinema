@@ -1,14 +1,22 @@
-export default function SearchSuggestion({setSearchValue, value}){
-    function handleSearch()
-    {
+import proptype from "prop-types";
+SearchSuggestion.propTypes = {
+    setSearchValue: proptype.func,
+    value: proptype.string,
+};
+export default function SearchSuggestion({ setSearchValue, value }) {
+    function handleSearch() {
         setSearchValue(value);
     }
-    return(
+    return (
         <>
-         <span onClick={handleSearch} className="inline-block border-1 border-white rounded-full px-[0.4rem] text-sky-500
-         hover:bg-sky-500 hover:text-white hover:border-sky-500 cursor-pointer">
-            {value}
-         </span>
+            <span
+                onClick={handleSearch}
+                className="inline-block outline-1 outline-teal-500 rounded-full
+          px-[0.4rem] text-white hover:bg-teal-200/40 hover:text-white hover:outline-teal-200/40
+          cursor-pointer"
+            >
+                {value}
+            </span>
         </>
     );
 }
